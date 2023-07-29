@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Displaying all data related to people from Li Data's Database"
+    />
+    <meta name="keywords" content="li data," />
+
+    <title>Companies | Li Data</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <!-- START NAVBAR -->
+      <nav
+        class="navbar navbar--user navbar-expand-md navbar-light"
+        id="user-nav"
+      >
+        <div class="container-fluid justify-content-end">
+          <a class="navbar-brand" href="index.html">
+            <img class="img-fluid" src="assets/images/logo.svg" alt="li data" />
+          </a>
+
+          <button
+            class="navbar-toggler me-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item pl-4">
+                <a class="nav-link" aria-current="page" href="home.html">
+                  <i class="bi bi-house-door"></i>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item d-none d-md-block" id="search">
+                <a class="nav-link nav-link__search active" href="people.html">
+                  <i class="bi bi-search"></i>
+                  Data Search
+                </a>
+
+                <!-- Show element on hover  -->
+                <div class="search__details hide">
+                  <a href="people.html">
+                    <div class="search__details--left d-flex">
+                      <div class="search__details--icon-box">
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <div class="search__details--text">
+                        <div
+                          class="fw-bold heading--sub d-flex justify-content-between"
+                        >
+                          People
+                          <i class="bi bi-arrow-right animate-arrow"></i>
+                        </div>
+                        <p>
+                          Search for hyper-targeted lists of people using
+                          filters.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="company.html">
+                    <div class="search__details--right d-flex">
+                      <div class="search__details--icon-box">
+                        <i class="bi bi-building"></i>
+                      </div>
+                      <div class="search__details--text">
+                        <div
+                          class="fw-bold heading--sub d-flex justify-content-between"
+                        >
+                          Companies
+                          <i class="bi bi-arrow-right animate-arrow"></i>
+                        </div>
+                        <p>
+                          Search for targeted lists of companies using filters.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav-item d-md-none d-lg-none">
+                <a class="nav-link" href="people.html">
+                  <i class="bi bi-send px-2"></i>
+                  People
+                </a>
+              </li>
+              <li class="nav-item d-md-none d-lg-none">
+                <a class="nav-link" href="company.html">
+                  <i class="bi bi-building px-2"></i>
+                  Companies
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="settings/upgrade.html">
+                  <i class="bi bi-box-seam px-2"></i>
+                  Products
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- START SHOW ELEMENT ON CLICKING USER -->
+          <div class="user-div hide u-box-shadow-1">
+            <h4 class="px-4 pt-5">Shamonti Haque</h4>
+            <div class="user--label mx-4">
+              <span>Admin</span>
+            </div>
+
+            <div class="user--menu">
+              <a class="user--menu-item" href="settings/account.html">
+                <i class="bi bi-gear"></i>
+                <span>Settings</span>
+              </a>
+              <a class="user--menu-item" href="settings/upgrade.html">
+                <i class="bi bi-trophy"></i>
+                <span>Upgrade Plan</span>
+              </a>
+
+              <a class="user--menu-item mb-3" href="login.html">
+                <i class="bi bi-power"></i>
+                <span>Logout</span>
+              </a>
+            </div>
+          </div>
+          <!-- END SHOW ELEMENT ON CLICKING USER -->
+        </div>
+
+        <!-- START RIGHT NAV ITEMS -->
+        <div class="d-flex nav-right__box">
+          <a class="btn btn-blue mx-4" href="settings/upgrade.html"
+            >Get unlimited leads
+          </a>
+          <button type="button" class="btn">
+            <i class="bi bi-telephone phone-btn"></i>
+          </button>
+
+          <!-- TODO Link to Blog site -->
+          <a class="btn"><i class="bi bi-question-circle" href="#"></i></a>
+
+          <button type="button" class="btn notification-btn">
+            <i class="bi bi-bell"></i>
+          </button>
+          <button type="button" class="user user-btn circle-element mx-3">
+            <p class="user-name">SH</p>
+          </button>
+        </div>
+        <!-- END RIGHT NAV ITEMS -->
+      </nav>
+      <!-- END NAVBAR -->
+
+      <!-- START SECOND NAVBAR -->
+      <div class="navbar02 u-border-bottom">
+        <a href="people.html">
+          <div class="navbar02--left">
+            <h2 class="nav-item fs-4">
+              <i class="bi bi-people pe-2"></i>
+              People
+            </h2>
+          </div>
+        </a>
+
+        <a href="company.html">
+          <div class="navbar02--right">
+            <h2 class="nav-item nav-item--colored fs-4">
+              <i class="bi bi-building pe-2"></i>
+              Companies
+            </h2>
+          </div>
+        </a>
+      </div>
+      <!-- END SECOND NAVBAR -->
+
+      <!-- FIXME hide when clicked somewhere else -->
+      <!-- START SHOW WHEN CLICKED ON PHONE -->
+      <div class="u-box-shadow-1 phone-call__div hide">
+        <div class="phone-call--icon">
+          <i class="bi bi-telephone-outbound text-primary"></i>
+        </div>
+        <div class="phone-call--text">
+          Instantly click-to-call prospects from anywhere.
+        </div>
+        <div class="phone-call--button btn-blue">Upgrade to Professional</div>
+        <a class="phone-call--link"> Learn more </a>
+      </div>
+      <!-- END SHOW WHEN CLICKED ON PHONE -->
+
+      <!-- START SHOW WHEN CLICKED ON NOTIFICATION -->
+      <div
+        class="u-box-shadow-1 notification__sidebar hide animate__animated animate__fadeInRightBig"
+      >
+        <div class="notification--header">
+          <div class="notification--header-title">
+            <h5>NOTIFICATIONS</h5>
+          </div>
+          <div class="notification--header-icons">
+            <div class="btn"><i class="bi bi-arrow-clockwise"></i></div>
+            <div class="btn close-btn">
+              <i class="bi bi-x-lg"></i>
+            </div>
+          </div>
+        </div>
+        <div class="notification--body"></div>
+      </div>
+      <!-- END SHOW WHEN CLICKED ON NOTIFICATION -->
+    </header>
+
+    <main id="companyData">
+      <section class="section-user-dashboard">
+        <!-- START SIDEBAR -->
+        <section class="section-user-dashboard--sidebar">
+          <div class="heading--sub py-3 ps-4 u-border-bottom">Filters</div>
+          <div class="search-bar py-3 ps-4 u-border-bottom">
+            <input
+              type="search"
+              name="search"
+              id="txtSearch"
+              class="bg-transparent"
+              placeholder="Search..."
+            />
+          </div>
+
+          <!-- INPUT COMPANY NAME -->
+          <div class="input-company u-border-bottom py-4 px-4">
+            <div class="input-title pb-2">
+              <i class="bi bi-building pe-2"></i>
+              Company
+            </div>
+            <input
+              type="text"
+              name="company"
+              id="company"
+              placeholder="Enter companies..."
+            />
+            <form action="" class="d-flex justify-content-end mt-2">
+              <button type="submit" class="btn btn-blue rounded-1 w-100">
+                Apply
+              </button>
+            </form>
+          </div>
+
+          <!-- INPUT COUNTRY -->
+          <div class="input-country u-border-bottom py-4 px-4">
+            <div class="input-title pb-2">
+              <i class="bi bi-globe2"></i>
+              Country
+            </div>
+            <div class="dropdown" id="searchCountry">
+              <input
+                class="searchBar text-dark fw-normal col-12"
+                id="countryDropdown"
+                type="text"
+                placeholder="Search by Country..."
+                data-toggle="dropdown"
+                data-bs-toggle="dropdown"
+              />
+
+              <ul
+                class="dropdown-menu bg-white text-dark fw-bold p-3"
+                aria-labelledby="countryDropdown"
+              >
+                <li class="dropdown-item"><a href="#">Afghanistan</a></li>
+                <li class="dropdown-item"><a href="#">Åland Islands</a></li>
+                <li class="dropdown-item"><a href="#">Albania</a></li>
+                <li class="dropdown-item"><a href="#">Algeria</a></li>
+                <li class="dropdown-item"><a href="#">American Samoa</a></li>
+                <li class="dropdown-item"><a href="#">Andorra</a></li>
+                <li class="dropdown-item"><a href="#">Angola</a></li>
+                <li class="dropdown-item"><a href="#">Anguilla</a></li>
+                <li class="dropdown-item"><a href="#">Antarctica</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Antigua and Barbuda</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Argentina</a></li>
+                <li class="dropdown-item"><a href="#">Armenia</a></li>
+                <li class="dropdown-item"><a href="#">Aruba</a></li>
+                <li class="dropdown-item"><a href="#">Australia</a></li>
+                <li class="dropdown-item"><a href="#">Austria</a></li>
+                <li class="dropdown-item"><a href="#">Azerbaijan</a></li>
+                <li class="dropdown-item"><a href="#">Bahamas</a></li>
+                <li class="dropdown-item"><a href="#">Bahrain</a></li>
+                <li class="dropdown-item"><a href="#">Bangladesh</a></li>
+                <li class="dropdown-item"><a href="#">Barbados</a></li>
+                <li class="dropdown-item"><a href="#">Belarus</a></li>
+                <li class="dropdown-item"><a href="#">Belgium</a></li>
+                <li class="dropdown-item"><a href="#">Belize</a></li>
+                <li class="dropdown-item"><a href="#">Benin</a></li>
+                <li class="dropdown-item"><a href="#">Bermuda</a></li>
+                <li class="dropdown-item"><a href="#">Bhutan</a></li>
+                <li class="dropdown-item"><a href="#">Bolivia</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Bosnia and Herzegovina</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Botswana</a></li>
+                <li class="dropdown-item"><a href="#">Bouvet Island</a></li>
+                <li class="dropdown-item"><a href="#">Brazil</a></li>
+                <li class="dropdown-item">
+                  <a href="#">British Indian Ocean Territory</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Brunei Darussalam</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Bulgaria</a></li>
+                <li class="dropdown-item"><a href="#">Burkina Faso</a></li>
+                <li class="dropdown-item"><a href="#">Burundi</a></li>
+                <li class="dropdown-item"><a href="#">Cambodia</a></li>
+                <li class="dropdown-item"><a href="#">Cameroon</a></li>
+                <li class="dropdown-item"><a href="#">Canada</a></li>
+                <li class="dropdown-item"><a href="#">Cape Verde</a></li>
+                <li class="dropdown-item"><a href="#">Cayman Islands</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Central African Republic</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Chad</a></li>
+                <li class="dropdown-item"><a href="#">Chile</a></li>
+                <li class="dropdown-item"><a href="#">China</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Christmas Island</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Cocos (Keeling) Islands</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Colombia</a></li>
+                <li class="dropdown-item"><a href="#">Comoros</a></li>
+                <li class="dropdown-item"><a href="#">Congo</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Congo, The Democratic Republic of The</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Cook Islands</a></li>
+                <li class="dropdown-item"><a href="#">Costa Rica</a></li>
+                <li class="dropdown-item"><a href="#">Cote D'ivoire</a></li>
+                <li class="dropdown-item"><a href="#">Croatia</a></li>
+                <li class="dropdown-item"><a href="#">Cuba</a></li>
+                <li class="dropdown-item"><a href="#">Cyprus</a></li>
+                <li class="dropdown-item"><a href="#">Czech Republic</a></li>
+                <li class="dropdown-item"><a href="#">Denmark</a></li>
+                <li class="dropdown-item"><a href="#">Djibouti</a></li>
+                <li class="dropdown-item"><a href="#">Dominica</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Dominican Republic</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Ecuador</a></li>
+                <li class="dropdown-item"><a href="#">Egypt</a></li>
+                <li class="dropdown-item"><a href="#">El Salvador</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Equatorial Guinea</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Eritrea</a></li>
+                <li class="dropdown-item"><a href="#">Estonia</a></li>
+                <li class="dropdown-item"><a href="#">Ethiopia</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Falkland Islands (Malvinas)</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Faroe Islands</a></li>
+                <li class="dropdown-item"><a href="#">Fiji</a></li>
+                <li class="dropdown-item"><a href="#">Finland</a></li>
+                <li class="dropdown-item"><a href="#">France</a></li>
+                <li class="dropdown-item"><a href="#">French Guiana</a></li>
+                <li class="dropdown-item">
+                  <a href="#">French Polynesia</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">French Southern Territories</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Gabon</a></li>
+                <li class="dropdown-item"><a href="#">Gambia</a></li>
+                <li class="dropdown-item"><a href="#">Georgia</a></li>
+                <li class="dropdown-item"><a href="#">Germany</a></li>
+                <li class="dropdown-item"><a href="#">Ghana</a></li>
+                <li class="dropdown-item"><a href="#">Gibraltar</a></li>
+                <li class="dropdown-item"><a href="#">Greece</a></li>
+                <li class="dropdown-item"><a href="#">Greenland</a></li>
+                <li class="dropdown-item"><a href="#">Grenada</a></li>
+                <li class="dropdown-item"><a href="#">Guadeloupe</a></li>
+                <li class="dropdown-item"><a href="#">Guam</a></li>
+                <li class="dropdown-item"><a href="#">Guatemala</a></li>
+                <li class="dropdown-item"><a href="#">Guernsey</a></li>
+                <li class="dropdown-item"><a href="#">Guinea</a></li>
+                <li class="dropdown-item"><a href="#">Guinea-bissau</a></li>
+                <li class="dropdown-item"><a href="#">Guyana</a></li>
+                <li class="dropdown-item"><a href="#">Haiti</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Heard Island and Mcdonald Islands</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Holy See (Vatican City State)</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Honduras</a></li>
+                <li class="dropdown-item"><a href="#">Hong Kong</a></li>
+                <li class="dropdown-item"><a href="#">Hungary</a></li>
+                <li class="dropdown-item"><a href="#">Iceland</a></li>
+                <li class="dropdown-item"><a href="#">India</a></li>
+                <li class="dropdown-item"><a href="#">Indonesia</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Iran, Islamic Republic of</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Iraq</a></li>
+                <li class="dropdown-item"><a href="#">Ireland</a></li>
+                <li class="dropdown-item"><a href="#">Isle of Man</a></li>
+                <li class="dropdown-item"><a href="#">Israel</a></li>
+                <li class="dropdown-item"><a href="#">Italy</a></li>
+                <li class="dropdown-item"><a href="#">Jamaica</a></li>
+                <li class="dropdown-item"><a href="#">Japan</a></li>
+                <li class="dropdown-item"><a href="#">Jersey</a></li>
+                <li class="dropdown-item"><a href="#">Jordan</a></li>
+                <li class="dropdown-item"><a href="#">Kazakhstan</a></li>
+                <li class="dropdown-item"><a href="#">Kenya</a></li>
+                <li class="dropdown-item"><a href="#">Kiribati</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Korea, Democratic People's Republic of</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Korea, Republic of</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Kuwait</a></li>
+                <li class="dropdown-item"><a href="#">Kyrgyzstan</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Lao People's Democratic Republic</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Latvia</a></li>
+                <li class="dropdown-item"><a href="#">Lebanon</a></li>
+                <li class="dropdown-item"><a href="#">Lesotho</a></li>
+                <li class="dropdown-item"><a href="#">Liberia</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Libyan Arab Jamahiriya</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Liechtenstein</a></li>
+                <li class="dropdown-item"><a href="#">Lithuania</a></li>
+                <li class="dropdown-item"><a href="#">Luxembourg</a></li>
+                <li class="dropdown-item"><a href="#">Macao</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Macedonia, The Former Yugoslav Republic of</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Madagascar</a></li>
+                <li class="dropdown-item"><a href="#">Malawi</a></li>
+                <li class="dropdown-item"><a href="#">Malaysia</a></li>
+                <li class="dropdown-item"><a href="#">Maldives</a></li>
+                <li class="dropdown-item"><a href="#">Mali</a></li>
+                <li class="dropdown-item"><a href="#">Malta</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Marshall Islands</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Martinique</a></li>
+                <li class="dropdown-item"><a href="#">Mauritania</a></li>
+                <li class="dropdown-item"><a href="#">Mauritius</a></li>
+                <li class="dropdown-item"><a href="#">Mayotte</a></li>
+                <li class="dropdown-item"><a href="#">Mexico</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Micronesia, Federated States of</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Moldova, Republic of</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Monaco</a></li>
+                <li class="dropdown-item"><a href="#">Mongolia</a></li>
+                <li class="dropdown-item"><a href="#">Montenegro</a></li>
+                <li class="dropdown-item"><a href="#">Montserrat</a></li>
+                <li class="dropdown-item"><a href="#">Morocco</a></li>
+                <li class="dropdown-item"><a href="#">Mozambique</a></li>
+                <li class="dropdown-item"><a href="#">Myanmar</a></li>
+                <li class="dropdown-item"><a href="#">Namibia</a></li>
+                <li class="dropdown-item"><a href="#">Nauru</a></li>
+                <li class="dropdown-item"><a href="#">Nepal</a></li>
+                <li class="dropdown-item"><a href="#">Netherlands</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Netherlands Antilles</a>
+                </li>
+                <li class="dropdown-item"><a href="#">New Caledonia</a></li>
+                <li class="dropdown-item"><a href="#">New Zealand</a></li>
+                <li class="dropdown-item"><a href="#">Nicaragua</a></li>
+                <li class="dropdown-item"><a href="#">Niger</a></li>
+                <li class="dropdown-item"><a href="#">Nigeria</a></li>
+                <li class="dropdown-item"><a href="#">Niue</a></li>
+                <li class="dropdown-item"><a href="#">Norfolk Island</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Northern Mariana Islands</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Norway</a></li>
+                <li class="dropdown-item"><a href="#">Oman</a></li>
+                <li class="dropdown-item"><a href="#">Pakistan</a></li>
+                <li class="dropdown-item"><a href="#">Palau</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Palestinian Territory, Occupied</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Panama</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Papua New Guinea</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Paraguay</a></li>
+                <li class="dropdown-item"><a href="#">Peru</a></li>
+                <li class="dropdown-item"><a href="#">Philippines</a></li>
+                <li class="dropdown-item"><a href="#">Pitcairn</a></li>
+                <li class="dropdown-item"><a href="#">Poland</a></li>
+                <li class="dropdown-item"><a href="#">Portugal</a></li>
+                <li class="dropdown-item"><a href="#">Puerto Rico</a></li>
+                <li class="dropdown-item"><a href="#">Qatar</a></li>
+                <li class="dropdown-item"><a href="#">Reunion</a></li>
+                <li class="dropdown-item"><a href="#">Romania</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Russian Federation</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Rwanda</a></li>
+                <li class="dropdown-item"><a href="#">Saint Helena</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Saint Kitts and Nevis</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Saint Lucia</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Saint Pierre and Miquelon</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Saint Vincent and The Grenadines</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Samoa</a></li>
+                <li class="dropdown-item"><a href="#">San Marino</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Sao Tome and Principe</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Saudi Arabia</a></li>
+                <li class="dropdown-item"><a href="#">Senegal</a></li>
+                <li class="dropdown-item"><a href="#">Serbia</a></li>
+                <li class="dropdown-item"><a href="#">Seychelles</a></li>
+                <li class="dropdown-item"><a href="#">Sierra Leone</a></li>
+                <li class="dropdown-item"><a href="#">Singapore</a></li>
+                <li class="dropdown-item"><a href="#">Slovakia</a></li>
+                <li class="dropdown-item"><a href="#">Slovenia</a></li>
+                <li class="dropdown-item"><a href="#">Solomon Islands</a></li>
+                <li class="dropdown-item"><a href="#">Somalia</a></li>
+                <li class="dropdown-item"><a href="#">South Africa</a></li>
+                <li class="dropdown-item">
+                  <a href="#">South Georgia and The South Sandwich Islands</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Spain</a></li>
+                <li class="dropdown-item"><a href="#">Sri Lanka</a></li>
+                <li class="dropdown-item"><a href="#">Sudan</a></li>
+                <li class="dropdown-item"><a href="#">Suriname</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Svalbard and Jan Mayen</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Swaziland</a></li>
+                <li class="dropdown-item"><a href="#">Sweden</a></li>
+                <li class="dropdown-item"><a href="#">Switzerland</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Syrian Arab Republic</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Taiwan (ROC)</a></li>
+                <li class="dropdown-item"><a href="#">Tajikistan</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Tanzania, United Republic of</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Thailand</a></li>
+                <li class="dropdown-item"><a href="#">Timor-leste</a></li>
+                <li class="dropdown-item"><a href="#">Togo</a></li>
+                <li class="dropdown-item"><a href="#">Tokelau</a></li>
+                <li class="dropdown-item"><a href="#">Tonga</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Trinidad and Tobago</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Tunisia</a></li>
+                <li class="dropdown-item"><a href="#">Turkey</a></li>
+                <li class="dropdown-item"><a href="#">Turkmenistan</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Turks and Caicos Islands</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Tuvalu</a></li>
+                <li class="dropdown-item"><a href="#">Uganda</a></li>
+                <li class="dropdown-item"><a href="#">Ukraine</a></li>
+                <li class="dropdown-item">
+                  <a href="#">United Arab Emirates</a>
+                </li>
+                <li class="dropdown-item"><a href="#">United Kingdom</a></li>
+                <li class="dropdown-item"><a href="#">United States</a></li>
+                <li class="dropdown-item">
+                  <a href="#">United States Minor Outlying Islands</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Uruguay</a></li>
+                <li class="dropdown-item"><a href="#">Uzbekistan</a></li>
+                <li class="dropdown-item"><a href="#">Vanuatu</a></li>
+                <li class="dropdown-item"><a href="#">Venezuela</a></li>
+                <li class="dropdown-item"><a href="#">Viet Nam</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Virgin Islands, British</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Virgin Islands, U.S.</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Wallis and Futuna</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Western Sahara</a></li>
+                <li class="dropdown-item"><a href="#">Yemen</a></li>
+                <li class="dropdown-item"><a href="#">Zambia</a></li>
+                <li class="dropdown-item"><a href="#">Zimbabwe</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- INPUT CITY -->
+          <div class="input-city u-border-bottom py-4 px-4">
+            <div class="input-title pb-2">
+              <i class="bi bi-pin-map-fill"></i>
+              City
+            </div>
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="Enter city"
+            />
+            <form action="" class="d-flex justify-content-end mt-2">
+              <button type="submit" class="btn btn-blue rounded-1 w-100">
+                Apply
+              </button>
+            </form>
+          </div>
+
+          <!-- INPUT STATE -->
+          <div class="input-state u-border-bottom py-4 px-4">
+            <div class="input-title pb-2">
+              <i class="bi bi-map-fill"></i>
+              State
+            </div>
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="Enter state"
+            />
+            <form action="" class="d-flex justify-content-end mt-2">
+              <button type="submit" class="btn btn-blue rounded-1 w-100">
+                Apply
+              </button>
+            </form>
+          </div>
+
+          <!-- INPUT INDUSTRY NAME -->
+          <div class="input-industry py-4 px-4">
+            <div class="input-title pb-2">
+              <i class="bi bi-tools pe-2"></i>
+              Industry
+            </div>
+
+            <input
+              type="text"
+              name="industry"
+              id="industry"
+              placeholder="Search industries..."
+            />
+            <form action="" class="d-flex justify-content-end mt-2">
+              <button type="submit" class="btn btn-blue rounded-1 w-100">
+                Apply
+              </button>
+            </form>
+          </div>
+        </section>
+        <!-- END SIDEBAR -->
+
+        <!-- START MAIN DASHBOARD -->
+        <section class="section-user-dashboard--main">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 ms-auto d-flex justify-content-end mt-4">
+                <button type="button" class="btn btn-download border-3">
+                  <i class="bi bi-download"></i>
+                  &nbsp; Download Selected Data
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- START TABLE -->
+          <div
+            class="section-table table-scrollable mx-5 mt-4 mb-2"
+            style="width: 75vw; overflow: auto; max-height: 78vh"
+          >
+            <table
+              class="table table-hover table-bordered table-responsive"
+              id="peopleTable"
+            >
+              <thead>
+                <tr>
+                  <th class="px-4">
+                    <a href="#" class="selectAll"> Select All </a>
+                  </th>
+                  <th>Company</th>
+                  <th>Quick Actions</th>
+                  <th>Employees</th>
+                  <th>Industry</th>
+                  <th class="w-25">Linkedin Specialties</th>
+                  <th>Current Technologies</th>
+                  <th>SEO Description</th>
+                  <th>Company Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input class="form-check-input" type="checkbox" value="" />
+                  </td>
+                  <td>
+                    <a href="company01.html" class="company-name">
+                      SEO Exparte Bangladesh
+                    </a>
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-access btn-access--phone"
+                      id="accessBtn"
+                    >
+                      Access Email
+                    </button>
+
+                    <div class="message-box hide-text">
+                      Verified email costs one credit.
+                    </div>
+
+                    <div class="button-group hide" id="buttonGroup">
+                      <a
+                        class="btn btn-access btn-access--phone"
+                        href="settings/upgrade.html"
+                      >
+                        <i class="bi bi-phone"></i>
+                        <i class="bi bi-caret-down-fill"></i>
+                      </a>
+
+                      <div
+                        class="message-box message-box--phone hide-text"
+                        id="messagePhone"
+                      ></div>
+
+                      <a
+                        class="btn btn-access btn-access--email"
+                        href="settings/upgrade.html"
+                      >
+                        <i class="bi bi-envelope"></i>
+                        <i class="bi bi-caret-down-fill"></i>
+                      </a>
+
+                      <div
+                        class="message-box message-box--email hide-text"
+                        id="messageEmail"
+                      >
+                        <!-- Email not available -->
+                      </div>
+                    </div>
+                  </td>
+                  <td>150</td>
+                  <td>computer, software</td>
+                  <td>
+                    criminal defense, elder law, bankruptcy, personal injury,
+                    real estate law, tax law, labor, employment law, appellate
+                    services, business & corporate law, commercial litigation,
+                    eminent domain, condemnation, fair debt collection, family
+                    law, health care law, probate, law practice
+                  </td>
+                  <td>
+                    jquery_2_1_1,infusionsoft,yelp,typekit,quantcast,wordpress_org,callrail,angies_list,google_font_api,facebook_widget,google_maps,mobile_friendly,facebook_login,google_analytics,apache
+                  </td>
+                  <td>
+                    JacksonWhite helps Arizona families, individuals and
+                    businesses with legal matters in the Phoenix-Mesa metro area
+                    and beyond. Learn more about us today.
+                  </td>
+                  <td>Bogra, Rajshahi, Bangladesh</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input class="form-check-input" type="checkbox" value="" />
+                  </td>
+                  <td>
+                    <a href="company01.html" class="company-name">
+                      SEO Exparte Bangladesh
+                    </a>
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-access btn-access--phone"
+                      id="accessBtn"
+                    >
+                      Access Email
+                    </button>
+
+                    <div class="message-box hide-text">
+                      Verified email costs one credit.
+                    </div>
+
+                    <div class="button-group hide" id="buttonGroup">
+                      <a
+                        class="btn btn-access btn-access--phone"
+                        href="settings/upgrade.html"
+                      >
+                        <i class="bi bi-phone"></i>
+                        <i class="bi bi-caret-down-fill"></i>
+                      </a>
+
+                      <div
+                        class="message-box message-box--phone hide-text"
+                        id="messagePhone"
+                      ></div>
+
+                      <a
+                        class="btn btn-access btn-access--email"
+                        href="settings/upgrade.html"
+                      >
+                        <i class="bi bi-envelope"></i>
+                        <i class="bi bi-caret-down-fill"></i>
+                      </a>
+
+                      <div
+                        class="message-box message-box--email hide-text"
+                        id="messageEmail"
+                      >
+                        <!-- Email not available -->
+                      </div>
+                    </div>
+                  </td>
+                  <td>150</td>
+                  <td>computer, software</td>
+                  <td>Bogra, Rajshahi, Bangladesh</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input class="form-check-input" type="checkbox" value="" />
+                  </td>
+                  <td>
+                    <a href="company01.html" class="company-name">
+                      SEO Exparte Bangladesh
+                    </a>
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-access btn-access--phone"
+                      id="accessBtn"
+                    >
+                      Access Email
+                    </button>
+
+                    <div class="message-box hide-text">
+                      Verified email costs one credit.
+                    </div>
+
+                    <div class="button-group hide" id="buttonGroup">
+                      <a
+                        class="btn btn-access btn-access--phone"
+                        href="settings/upgrade.html"
+                      >
+                        <i class="bi bi-phone"></i>
+                        <i class="bi bi-caret-down-fill"></i>
+                      </a>
+
+                      <div
+                        class="message-box message-box--phone hide-text"
+                        id="messagePhone"
+                      ></div>
+
+                      <a
+                        class="btn btn-access btn-access--email"
+                        href="settings/upgrade.html"
+                      >
+                        <i class="bi bi-envelope"></i>
+                        <i class="bi bi-caret-down-fill"></i>
+                      </a>
+
+                      <div
+                        class="message-box message-box--email hide-text"
+                        id="messageEmail"
+                      >
+                        <!-- Email not available -->
+                      </div>
+                    </div>
+                  </td>
+                  <td>150</td>
+                  <td>computer, software</td>
+                  <td>Bogra, Rajshahi, Bangladesh</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- END TABLE -->
+
+          <!-- Download CSV Button -->
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 ms-auto py-4 d-flex justify-content-end">
+                <button
+                  type="submit"
+                  class="btn btn-download border-3"
+                  disabled="disabled"
+                >
+                  <i class="bi bi-download"></i>
+                  &nbsp; Download Selected Data
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- START PAGINATION -->
+          <div class="container paginate">
+            <div class="row">
+              <div class="col-md-4 pagination-warning d-none">
+                Please add some filters to go to the second page! Pagination is
+                disabled when there is no filter applied, for performance
+                reasons.
+              </div>
+            </div>
+            <div class="row mt-3">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a
+                      class="page-link"
+                      href="#"
+                      tabindex="-1"
+                      aria-disabled="true"
+                      >Previous</a
+                    >
+                  </li>
+                  <li class="page-item warning">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- END PAGINATION -->
+        </section>
+        <!-- END MAIN DASHBOARD -->
+      </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/navbar.min.js"></script>
+    <script src="assets/js/people.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+
+    <script>
+      $(function () {
+        $('.form-check-input').click(function () {
+          $('.btn-download').prop(
+            'disabled',
+            $('input.form-check-input:checked').length == 0
+          );
+        });
+
+        $('#countryDropdown').on('keyup', function () {
+          var value = $(this).val().toLowerCase();
+          $('.dropdown-menu li').filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="li data," />
+
+    <title>Product | Li Data</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <!-- Font awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <!-- START NAVBAR -->
+      <div class="container">
+        <div class="row" id="home-navbar">
+          <div class="navbar__logo">
+            <a class="navbar-brand d-lg-flex" href="/">
+              <img
+                class="img-fluid"
+                src="assets/images/logo--company-name-dark.svg"
+                alt="li data"
+              />
+            </a>
+          </div>
+
+          <nav class="navbar navbar--center d-lg-flex d-none">
+            <ul class="navbar__ul">
+              <li class="navbar__li">
+                <a href="product.html" class="navbar__a"> Product </a>
+              </li>
+              <li class="navbar__li">
+                <a href="pricing/packages.html" class="navbar__a"> Pricing </a>
+              </li>
+              <li class="navbar__li">
+                <a href="" class="navbar__a"> Blog </a>
+              </li>
+              <li class="navbar__li">
+                <a href="careers.html" class="navbar__a"> Careers </a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="navbar navbar--right d-lg-flex d-none">
+            <ul class="navbar__ul align-items-center">
+              <li class="navbar__li d-flex align-items-center me-5">
+                <!-- START TRANSLATOR -->
+                <a
+                  href="#"
+                  onclick="doGTranslate('en|en');return false;"
+                  title="English"
+                  class="gflag nturl"
+                  style="background-position: -0px -0px"
+                  ><img
+                    src="//gtranslate.net/flags/blank.png"
+                    height="16"
+                    width="16"
+                    alt="English"
+                /></a>
+
+                <br />
+                <select onchange="doGTranslate(this);">
+                  <option value="">Select Language</option>
+                  <option value="en|zh-CN">Chinese (Simplified)</option>
+                  <option value="en|zh-TW">Chinese (Traditional)</option>
+                  <option value="en|en">English</option>
+                  <option value="en|fr">French</option>
+                  <option value="en|hi">Hindi</option>
+                  <option value="en|ja">Japanese</option>
+                  <option value="en|ko">Korean</option>
+                  <option value="en|pt">Portuguese</option>
+                  <option value="en|es">Spanish</option>
+                </select>
+                <div id="google_translate_element2"></div>
+                <!-- END TRANSLATOR -->
+              </li>
+              <li class="navbar__li">
+                <a href="login.html" class="navbar__a">Account </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- END NAVBAR -->
+
+      <!-- START BREADCRUMB -->
+      <hr class="mt-lg-0 mt-5 text-secondary" />
+      <div class="container">
+        <div class="row">
+          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Product
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- END BREADCRUMB -->
+    </header>
+
+    <!-- START NAVBAR FOR SMALL SCREEN -->
+    <div class="d-lg-none d-flex">
+      <div class="navbar__logo ms-md-5 ms-2 ps-5">
+        <a class="navbar-brand d-flex" href="/">
+          <img src="assets/images/logo--company-name-dark.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="product.html" class="navigation__link">Product</a>
+            </li>
+            <li class="navigation__item">
+              <a href="pricing/packages.html" class="navigation__link"
+                >Pricing</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Blog</a>
+            </li>
+            <li class="navigation__item">
+              <a href="careers.html" class="navigation__link">Careers</a>
+            </li>
+            <li class="navigation__item d-flex justify-content-center">
+              <!-- START TRANSLATOR -->
+              <a
+                href="#"
+                onclick="doGTranslate('en|en');return false;"
+                title="English"
+                class="gflag nturl"
+                style="background-position: -0px -0px"
+                ><img
+                  src="//gtranslate.net/flags/blank.png"
+                  height="16"
+                  width="16"
+                  alt="English"
+              /></a>
+
+              <br />
+              <select onchange="doGTranslate(this);">
+                <option value="">Select Language</option>
+                <option value="en|zh-CN">Chinese (Simplified)</option>
+                <option value="en|zh-TW">Chinese (Traditional)</option>
+                <option value="en|en">English</option>
+                <option value="en|fr">French</option>
+                <option value="en|hi">Hindi</option>
+                <option value="en|ja">Japanese</option>
+                <option value="en|ko">Korean</option>
+                <option value="en|pt">Portuguese</option>
+                <option value="en|es">Spanish</option>
+              </select>
+              <div id="google_translate_element2"></div>
+              <!-- END TRANSLATOR -->
+            </li>
+            <li class="navigation__item">
+              <a href="login.html" class="navigation__link">Account</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- END NAVBAR FOR SMALL SCREEN -->
+
+    <main>
+      <!-- START PRODUCT HEADING -->
+      <section class="section-product-heading u-padding-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 px-5">
+              <h1 class="mb-5">
+                How can Li Data help you throughout your entire process?
+              </h1>
+              <a href="signup.html" class="btn btn-grad">Try It Now</a>
+            </div>
+            <div class="col-md-6 px-5 pt-5 mt-md-0 mt-5">
+              <p>
+                Acre is an end-to-end mortgage platform that exists to save you
+                time, so you can grow your business.
+              </p>
+              <p>
+                By having one place for every aspect of the mortgage journey,
+                Acre cuts out the fuss. But don’t just take our word for it,
+                book a demo to see it in action for yourself.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END PRODUCT HEADING -->
+
+      <!-- START PRODUCT FEATURE01 -->
+      <section class="section-feature01 u-padding-lg pt-xs-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 px-5">
+              <h2 class="feature-title">Find the right companies</h2>
+              <p class="feature-content">
+                Find the best companies in your territory and prioritize based
+                on technology, hiring, funding, and dozens of other triggers.
+              </p>
+              <a href="signup.html" class="btn-txt mt-3"> Try It Now → </a>
+            </div>
+            <div class="offset-md-1 col-md-6 mt-md-0 mt-5 pt-md-0 pt-5">
+              <img
+                class="img-fluid"
+                src="assets/images/feature01.svg"
+                alt="Feature01 Illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END PRODUCT FEATURE01 -->
+
+      <!-- START PRODUCT FEATURE02 -->
+      <section class="section-feature02 u-padding-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                class="img-fluid"
+                src="assets/images/feature02.svg"
+                alt="Feature02 Illustration"
+              />
+            </div>
+            <div class="offset-md-1 col-md-5 px-5 mt-md-0 mt-5 pt-md-0 pt-5">
+              <h2 class="feature-title">Find the right people</h2>
+              <p class="feature-content">
+                Find the best contacts at each company and search by name, job
+                title, location, and dozens of other signals.
+              </p>
+              <a href="signup.html" class="btn-txt mt-3"> Try It Now → </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END PRODUCT FEATURE02 -->
+
+      <!-- START PRODUCT FEATURE03 -->
+      <section class="section-feature03 u-padding-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 px-5">
+              <h2 class="feature-title">Keep your CRM fresh and clean</h2>
+              <p class="feature-content">
+                <b class="text-dark">Append:</b>
+                Complete your picture of every lead, contact, and account
+                profile. We enrich your records with 65+ data points in the Li
+                Data Database to complete records with the data that is critical
+                for your sales strategy.
+                <br />
+                <br />
+                <b class="text-dark">Clean: </b>
+                Data decay is a rate of 20% per quarter. Let us help you
+                mitigate the headaches that come along with that. You can
+                correct, append, and update your data as time goes on for an
+                everlasting accurate database.
+              </p>
+              <a href="signup.html" class="btn-txt mt-3"> Try It Now → </a>
+            </div>
+            <div class="offset-md-1 col-md-6 mt-md-0 mt-5 pt-md-0 pt-5">
+              <img
+                class="img-fluid"
+                src="assets/images/feature03.svg"
+                alt="Feature03 Illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END PRODUCT FEATURE03 -->
+
+      <!-- START PRODUCT FEATURE04 -->
+      <section class="section-feature04 u-padding-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                class="img-fluid"
+                src="assets/images/feature04.svg"
+                alt="Feature02 Illustration"
+              />
+            </div>
+            <div class="offset-md-1 col-md-5 px-5 mt-md-0 mt-5 pt-md-0 pt-5">
+              <h2 class="feature-title">
+                Fix stale contacts and track your champions
+              </h2>
+              <p class="feature-content">
+                Keep your Salesforce clean with the help of Li Data Refresh.
+                Discover real-time updates to data entries every time a contact
+                changes jobs or gets promoted. Reps are continually provided the
+                information they need to connect and can quickly capitalize on
+                new business opportunities.
+              </p>
+              <a href="signup.html" class="btn-txt mt-3"> Try It Now → </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END PRODUCT FEATURE04 -->
+
+      <!-- START CALL TO ACTION -->
+      <section class="section-cta curved-bg u-padding-lg">
+        <div class="container">
+          <div class="row">
+            <div class="offset-lg-3 col-lg-6 text-center">
+              <div class="row pt-5">
+                <div class="offset-lg-0 col-lg-12 col-md-8 offset-md-2">
+                  <h3
+                    class="section-title pb-4"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                    Reach the right person with the right message at the right
+                    time.
+                  </h3>
+
+                  <p>
+                    Get started for free, then add your whole team. You can
+                    always talk to sales if you’re interested in advanced plans.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 col-md-6 col-10 mx-lg-0 mx-auto">
+                  <div class="input-group py-4 mx-lg-0 mx-auto">
+                    <input
+                      type="email"
+                      class="form-control form-control--signup"
+                      placeholder="Enter your email"
+                      aria-label="Enter your email..."
+                      aria-describedby="button-signup"
+                    />
+                    <button
+                      class="btn btn-grad rounded-end-pill px-md-4 px-2"
+                      type="button"
+                      id="button-signup"
+                    >
+                      Sign up for free
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 col-md-6 col-7 mx-auto mx-lg-0">
+                  <div class="divider mt-4 mb-3 mx-lg-0 mx-auto">
+                    <div class="divider--line me-5"></div>
+                    <span>OR</span>
+                    <div class="divider--line ms-5"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 col-md-6 col-8 mx-auto mx-lg-0">
+                  <div class="google-signup mx-lg-0 mx-auto">
+                    <a
+                      type="button"
+                      class="btn btn-google-login u-box-shadow-2"
+                      href="signup__google.html"
+                    >
+                      <img
+                        src="assets/images/icons/google.svg"
+                        alt="google logo"
+                        class="me-2 img-fluid"
+                      />
+                      Sign up with google
+                    </a>
+                  </div>
+                  <div class="facebook-signup mx-lg-0 mx-auto mt-4">
+                    <a
+                      type="button"
+                      class="btn btn-facebook-login u-box-shadow-2"
+                      href="signup__facebook.html"
+                    >
+                      <img
+                        src="assets/images/icons/facebook.svg"
+                        alt="facebook logo"
+                        class="me-2 img-fluid"
+                      />
+                      Sign up with facebook
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END CALL TO ACTION -->
+
+      <!-- START CATAGORIES -->
+      <section class="section-categories bg-light u-padding-lg">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-md-12 border-bottom">
+              <h5 class="sub-heading">Browse Lidata's Directories</h5>
+            </div>
+          </div>
+          <div class="row py-5 px-3">
+            <div class="col-md-6 pe-4">
+              <div class="d-flex align-items-center border-bottom pb-3 mb-4">
+                <div class="circle-element circle-element--person">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <span class="sub-heading">Person Search</span>
+              </div>
+              <div>
+                <a href="directory/people/A.html" class="blue-link">A</a>
+                <a href="directory/people/A.html" class="blue-link">B</a>
+                <a href="directory/people/A.html" class="blue-link">C</a>
+                <a href="directory/people/A.html" class="blue-link">D</a>
+                <a href="directory/people/A.html" class="blue-link">E</a>
+                <a href="directory/people/A.html" class="blue-link">F</a>
+                <a href="directory/people/A.html" class="blue-link">G</a>
+                <a href="directory/people/A.html" class="blue-link">H</a>
+                <a href="directory/people/A.html" class="blue-link">I</a>
+                <a href="directory/people/A.html" class="blue-link">J</a>
+                <a href="directory/people/A.html" class="blue-link">K</a>
+                <a href="directory/people/A.html" class="blue-link">L</a>
+                <a href="directory/people/A.html" class="blue-link">M</a>
+                <a href="directory/people/A.html" class="blue-link">N</a>
+                <a href="directory/people/A.html" class="blue-link">O</a>
+                <a href="directory/people/A.html" class="blue-link">P</a>
+                <a href="directory/people/A.html" class="blue-link">Q</a>
+                <a href="directory/people/A.html" class="blue-link">R</a>
+                <a href="directory/people/A.html" class="blue-link">S</a>
+                <a href="directory/people/A.html" class="blue-link">T</a>
+                <a href="directory/people/A.html" class="blue-link">U</a>
+                <a href="directory/people/A.html" class="blue-link">V</a>
+                <a href="directory/people/A.html" class="blue-link">W</a>
+                <a href="directory/people/A.html" class="blue-link">X</a>
+                <a href="directory/people/A.html" class="blue-link">Y</a>
+                <a href="directory/people/A.html" class="blue-link">Z</a>
+              </div>
+            </div>
+            <div class="col-md-6 ps-4">
+              <div class="d-flex align-items-center border-bottom pb-3 mb-4">
+                <div class="circle-element circle-element--company">
+                  <i class="bi bi-briefcase-fill"></i>
+                </div>
+                <span class="sub-heading">Company Search</span>
+              </div>
+              <div>
+                <a href="directory/company/A.html" class="blue-link">A</a>
+                <a href="directory/company/A.html" class="blue-link">B</a>
+                <a href="directory/company/A.html" class="blue-link">C</a>
+                <a href="directory/company/A.html" class="blue-link">D</a>
+                <a href="directory/company/A.html" class="blue-link">E</a>
+                <a href="directory/company/A.html" class="blue-link">F</a>
+                <a href="directory/company/A.html" class="blue-link">G</a>
+                <a href="directory/company/A.html" class="blue-link">H</a>
+                <a href="directory/company/A.html" class="blue-link">I</a>
+                <a href="directory/company/A.html" class="blue-link">J</a>
+                <a href="directory/company/A.html" class="blue-link">K</a>
+                <a href="directory/company/A.html" class="blue-link">L</a>
+                <a href="directory/company/A.html" class="blue-link">M</a>
+                <a href="directory/company/A.html" class="blue-link">N</a>
+                <a href="directory/company/A.html" class="blue-link">O</a>
+                <a href="directory/company/A.html" class="blue-link">P</a>
+                <a href="directory/company/A.html" class="blue-link">Q</a>
+                <a href="directory/company/A.html" class="blue-link">R</a>
+                <a href="directory/company/A.html" class="blue-link">S</a>
+                <a href="directory/company/A.html" class="blue-link">T</a>
+                <a href="directory/company/A.html" class="blue-link">U</a>
+                <a href="directory/company/A.html" class="blue-link">V</a>
+                <a href="directory/company/A.html" class="blue-link">W</a>
+                <a href="directory/company/A.html" class="blue-link">X</a>
+                <a href="directory/company/A.html" class="blue-link">Y</a>
+                <a href="directory/company/A.html" class="blue-link">Z</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END CATAGORIES -->
+    </main>
+
+    <!-- START FOOTER -->
+    <footer class="footer pt-5 bg-light">
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col-lg-3 pl-5 mb-lg-0 mb-5">
+            <a href="/">
+              <img
+                class="img-fluid footer__logo"
+                src="assets/images/logo--company-name-dark.svg"
+                alt="li data"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6 pl-md-0 pb-3 ps-md-0 ps-4">
+            <h5 class="footer-title">ABOUT</h5>
+            <ul class="pt-3">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="http://phonelist.io/forum/">Forum</a></li>
+              <li><a href="http://help.phonelist.io/">Help</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-4 col-sm-6 p-md-0 pb-3 ps-md-0 ps-4 mt-md-0 mt-4"
+          >
+            <h5 class="footer-title">OUR PARTNERS</h5>
+
+            <div class="row pe-5">
+              <div class="col-lg-4 col-md-5 col-4 mt-3">
+                <a href="https://www.latestdatabase.com/">
+                  <img
+                    src="assets/images/latest-database--logo.svg"
+                    class="img-fluid partner-logo"
+                    alt="latest database logo"
+                  />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-5 col-4 mt-3 me-1">
+                <a href="https://www.bcellphonelist.com/">
+                  <img
+                    src="assets/images/Brother Phone Number List--logo.svg"
+                    class="img-fluid partner-logo"
+                    alt="Brother Phone Number List logo"
+                  />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-5 col-4 mt-3">
+                <a href="http://www.photoeditorph.com/">
+                  <img
+                    src="assets/images/phollipines-photo-editor--logo.svg"
+                    class="img-fluid partner-logo"
+                    alt="Philippines Photo Editor logo"
+                  />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-5 col-4 mt-3 me-1">
+                <a href="https://www.mplists.com/">
+                  <img
+                    src="assets/images/mplists--logo.svg"
+                    class="img-fluid partner-logo"
+                    alt="Mp List logo"
+                  />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-5 col-4 me-md-auto mt-3">
+                <a href="http://www.seoexpartebd.com/">
+                  <img
+                    src="assets/images/seo-exparte-logo.svg"
+                    class="img-fluid partner-logo"
+                    alt="SEO Exparte Bangladesh logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 pb-lg-5 pb-3 ps-md-0 ps-4 mt-md-0 mt-4"
+          >
+            <div class="span pb-3">
+              <h5 class="footer-title">SOCIAL MEDIA</h5>
+            </div>
+            <div class="span fsocial">
+              Follow us on social media to find out the latest updates on our
+              progress.
+            </div>
+            <div class="social-media pt-3">
+              <a href="https://www.facebook.com/Phonelistio-111559994765583">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/Phonelistio">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCIYmVIkqTG1oi79AWTeVLDQ"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/phone-list-05b32a230/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.instagram.com/phonelist.io/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+
+            <!-- START SOCIAL MEDIA BUTTON -->
+            <div class="social-media-button mt-3">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fab fa-whatsapp" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fab fa-telegram" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fab fa-facebook-messenger" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fab fa-skype" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-phone-alt" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- END SOCIAL MEDIA BUTTON -->
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <hr class="line" />
+        </div>
+
+        <div class="row bottom-line">
+          <div class="col-md-4 text-md-left text-center">
+            <span class="copy"
+              >&#169;2022 Lidata.io All rights reserved.</span
+            >
+          </div>
+          <div class="col-md-8 mt-md-0 mt-4">
+            <ul class="text-center m-auto terms">
+              <li><a href="terms-of-service.html">Terms of service</a></li>
+              <li><a href="privacy_policy.html">Privacy Policy</a></li>
+              <li><a href="refund.html">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/navbar.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+  </body>
+</html>
